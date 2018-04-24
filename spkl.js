@@ -3,12 +3,12 @@ $(function() {
   
   $(".sparkley:last").sparkleh({
     color: ["#645475","#67c3cc","#fbc91e", "#da3d56"],
-    count: 10,
+    count: 50,
     overlap: 10
   });
   
   $(".spkl").sparkleh({
-    count: 10,
+    count: 50,
     color: ["#645475","#67c3cc","#fbc91e", "#da3d56"],
     speed: 0.05
   });
@@ -24,7 +24,7 @@ $.fn.sparkleh = function( options ) {
       width: $this.outerWidth(),
       height: $this.outerHeight(),
       color: "#FFFFFF",
-      count: 30,
+      count: 50,
       overlap: 0,
       speed: 1
     }, options );
