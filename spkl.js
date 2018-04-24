@@ -3,14 +3,14 @@ $(function() {
   
   $(".sparkley:last").sparkleh({
     color: ["#645475","#67c3cc","#fbc91e", "#da3d56"],
-    count: 50,
+    count: 200,
     overlap: 10
   });
   
   $(".spkl").sparkleh({
-    count: 50,
+    count: 100,
     color: ["#645475","#67c3cc","#fbc91e", "#da3d56"],
-    speed: 0.05
+    speed: 10
   });
 });
 
@@ -24,9 +24,9 @@ $.fn.sparkleh = function( options ) {
       width: $this.outerWidth(),
       height: $this.outerHeight(),
       color: "#FFFFFF",
-      count: 50,
+      count: 100,
       overlap: 0,
-      speed: 1
+      speed: 10
     }, options );
     
     var sparkle = new Sparkle( $this, settings );
