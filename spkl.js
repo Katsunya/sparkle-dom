@@ -14,12 +14,6 @@ $(function() {
   });
 });
 
-
-
-
-
-
-
 $.fn.sparkleh = function( options ) {
     
   return this.each( function(k,v) {
@@ -41,7 +35,7 @@ $.fn.sparkleh = function( options ) {
       "mouseover focus" : function(e) {
         sparkle.over();
       },
-      "mouseout blur" : function(e) {
+      "mouseout focus" : function(e) {
         sparkle.over();
       }
     });
@@ -49,9 +43,6 @@ $.fn.sparkleh = function( options ) {
   });
   
 }
-
-
-
 
 function Sparkle( $parent, options ) {
   this.options = options;
